@@ -1,16 +1,33 @@
 # resume_app_daily_task
 
-A new Flutter project.
+## What is List and Map?
 
-## Getting Started
+`List : ` The list is an ordered collection of objects and the List can contain duplicate values. 
 
-This project is a starting point for a Flutter application.
+### Predefined functions of list
+add()
+addAll()
+insert()
+insertAll()
+<br>
+remove()
+removeAt()
+removeLast()
+removeRange()
 
-A few resources to get you started if this is your first Flutter project:
+# Example
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+ List sports = ['cricket', 'football', 'tennis', 'baseball'];
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+`Map : ` A Map is an object that maps keys to values or is a collection of attribute-value pairs.
+# Example
+
+```bash
+Map details = {'Usrname':'tom','Password':'pass@123'};
+```
+
+# Generics
+
+Generics in Dart provide a way to write reusable code that can work with different types. They allow you to define classes, functions, and interfaces that can operate on a variety of data types without sacrificing type safety. Generics are denoted by using angle brackets < > and a type parameter.
