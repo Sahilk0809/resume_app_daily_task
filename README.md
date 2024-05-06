@@ -22,6 +22,13 @@ removeRange()
 ```
 
 `Map : ` A Map is an object that maps keys to values or is a collection of attribute-value pairs.
+
+### Predefined functions of map
+addAll()
+remove()
+forEach()
+update()
+
 # Example
 
 ```bash
