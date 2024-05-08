@@ -7,15 +7,84 @@
 `List : ` The list is an ordered collection of objects and the List can contain duplicate values. 
 
 ### Predefined functions of list
-add()
-addAll()
-insert()
-insertAll()
+
+- Length of List
+```bash
+
+void main() {
+ 
+    List name = ["Sahil", "S", "a", "h" , "i" , "l"];
+  
+    print(name.length);
+ 
+}
+```
+- add()
+```bash
+void main() {
+
+    List name = ["Sahil", "S", "a", "h" , "i" , "l"];
+  
+    print(name[0]);
+  
+    name.add(50);
+  
+    print(name);
+}
+```
+- addAll()
+```bash
+void main() {
+
+    List name = ["Sahil", "S", "a", "h" , "i" , "l"];
+  
+    print(name[0]);
+  
+    name.addAll(['Akhil', 4, 5]);
+  
+    print(name);
+}
+```
+- insert()
+```bash
+void main() {
+
+    List name = ["Sahil", "S", "a", "h" , "i" , "l"];
+
+    print(name[0]);
+
+    name.insert(2, 50);
+
+    print(name);
+}
+```
+- insertAll()
 <br>
-remove()
-removeAt()
-removeLast()
-removeRange()
+
+- remove()
+```bash
+void main() {
+    List name = ["Sahil", "S", "a", "h" , "i" , "l"];
+  
+    print(name[0]);
+  
+    name.remove("B");
+  
+    print(name);
+}
+```
+- removeAt()
+```bash
+void main() {
+    List name = ["Sahil", "S", "a", "h" , "i" , "l"];
+  
+    print(name[0]);
+  
+    name.removeAt(3);
+  
+    print(name);
+}
+```
 
 # Example
 
