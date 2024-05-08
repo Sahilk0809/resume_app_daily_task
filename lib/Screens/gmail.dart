@@ -30,7 +30,7 @@ class _GmailState extends State<Gmail> {
                 ),
               ),
             ),
-            ...List.generate(12, (index) => buildListTile(index)),
+            ...List.generate(detailsText.length, (index) => buildListTile(index)),
           ],
         ),
       ),
@@ -39,7 +39,7 @@ class _GmailState extends State<Gmail> {
         backgroundColor: Colors.grey,
         elevation: 1,
         shadowColor: Colors.white,
-        title: Text('Gmail',style: const TextStyle(
+        title: const Text('Gmail',style: TextStyle(
           color: Colors.black,
           fontSize: 25,
         ),),

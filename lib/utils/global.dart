@@ -5,5 +5,5 @@ List detailsText = [
 ];
 
 List detailsIcons = [
-  Icons.all_inbox, Icons.inbox, Icons.star_border, Icons.access_time, Icons.label_important_outline_sharp, Icons.send, Icons.drafts, Icons.forward_to_inbox, Icons.error_outline, Icons.delete_forever, Icons.add, Icons.settings
+  Icons.all_inbox, Icons.inbox, Icons.star_border, Icons.access_time, Icons.label_important_outline_sharp, Icons.send, Icons.drafts, Icons.mail, Icons.error_outline, Icons.delete_sweep, Icons.add, Icons.settings
 ];
