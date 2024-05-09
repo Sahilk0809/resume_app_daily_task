@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -25,9 +23,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     SizedBox(
-                        height: 250,
-                        width: 250,
-                        child: Image.asset('assets/img/bg.png'),),
+                      height: 250,
+                      width: 250,
+                      child: Image.asset('assets/img/bg.png'),
+                    ),
                   ],
                 ),
                 const Row(
@@ -69,6 +68,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 const SizedBox(height: 10),
                 TextField(
+                  obscureText: true,
                   controller: txtPassword,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
@@ -87,7 +87,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Text('Forget Password?', style: TextStyle(color: Colors.blue, fontWeight: FontWeight.w600,),),
+                    Text(
+                      'Forget Password?',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
                   ],
                 ),
                 Container(
@@ -99,10 +105,18 @@ class _LoginScreenState extends State<LoginScreen> {
                     color: const Color(0xff272727),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: const Text('LOGIN', style: TextStyle(fontSize: 18, color: Colors.white),),
+                  child: const Text(
+                    'LOGIN',
+                    style: TextStyle(fontSize: 18, color: Colors.white),
+                  ),
                 ),
-                const SizedBox(height: 20,),
-                const Text('OR', style: TextStyle(fontSize: 20),),
+                const SizedBox(
+                  height: 20,
+                ),
+                const Text(
+                  'OR',
+                  style: TextStyle(fontSize: 20),
+                ),
                 Container(
                   margin: const EdgeInsets.only(top: 10),
                   height: 50,
@@ -115,9 +129,20 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Image.asset('assets/img/google.png', height: 25,),
-                       const SizedBox(width: 5,),
-                       const Text('Sign-In with Google', style: TextStyle(fontSize: 18, color: Colors.black, fontWeight: FontWeight.bold),)
+                      Image.asset(
+                        'assets/img/google.png',
+                        height: 25,
+                      ),
+                      const SizedBox(
+                        width: 5,
+                      ),
+                      const Text(
+                        'Sign-In with Google',
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold),
+                      )
                     ],
                   ),
                 ),
@@ -125,10 +150,14 @@ class _LoginScreenState extends State<LoginScreen> {
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('Don''\'t have an Account?', style: TextStyle(fontWeight: FontWeight.bold),),
+                    Text(
+                      'Don' '\'t have an Account?',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
                     Text(
                       'SignUp',
-                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
                 ),
