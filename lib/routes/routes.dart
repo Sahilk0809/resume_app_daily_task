@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:resume_app_daily_task/Screens/enter_screen/enterscreen.dart';
 import 'package:resume_app_daily_task/Screens/gmail/gmail.dart';
+import 'package:resume_app_daily_task/Screens/login_screen/loginScreen.dart';
 
 class MyRoutes{
   static Map<String, Widget Function(BuildContext)> routes = {
-    '/': (context) => const Gmail(),
+    // '/gmail': (context) => const Gmail(),
+    '/': (context) => const EnterScreen(),
+    '/login': (context) => const LoginScreen(),
   };
 }
