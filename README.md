@@ -163,3 +163,17 @@ class _StatusState extends State<Status> {
 
 https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/bcc5b720-a4ad-449f-8697-e6a2a2e87724
 
+# 6.4 ⭐Google Login Page⭐
+<div align="center">
+<img src="https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/6432248a-0bef-40c5-8b27-fc433c961388" height=65%>
+<a href="https://github.com/Sahilk0809/resume_app_daily_task/blob/master/lib/Screens/google/sign_in/email_screen.dart"> ⭐Click here for the source code⭐ </a>
+<br><br>
+<img src="https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/3abaa670-1fc3-4f96-9e68-6e4eb8893564" height=65%>
+<a href="https://github.com/Sahilk0809/resume_app_daily_task/blob/master/lib/Screens/google/sign_in/password_screen.dart"> ⭐Click here for the source code⭐ </a>
+<br><br>
+<img src="https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/be2481e7-c9b6-4966-9ee5-5dcd26f31ca7" height=65%>
+<a href="https://github.com/Sahilk0809/resume_app_daily_task/blob/master/lib/Screens/google/sign_in/succesful_screen.dart"> ⭐Click here for the source code⭐ </a>
+
+https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/a7a75e17-a64a-4aac-a878-2c3fe01ae987
+
+</div>
