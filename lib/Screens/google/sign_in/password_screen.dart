@@ -12,6 +12,7 @@ class _PasswordScreenState extends State<PasswordScreen> {
   Widget build(BuildContext context) {
     GlobalKey<FormState> formKey= GlobalKey();
     TextEditingController txtPassword = TextEditingController();
+    RegExp regex = RegExp(r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#\$&*~]).{8,}$');
 
     return Scaffold(
       backgroundColor: const Color(0xfff0f4f8),
@@ -101,6 +102,12 @@ class _PasswordScreenState extends State<PasswordScreen> {
                               {
                                 return 'Password is required';
                               }
+                            else if(value.length>=8 && value.length<=35){
+                              return 'Password must be between 8-35';
+                            }
+                            // else if(!regex.hasMatch(value)){
+                            //   return 'Enter valid password';
+                            // }
                           },
                           controller: txtPassword,
                           obscureText: true,
