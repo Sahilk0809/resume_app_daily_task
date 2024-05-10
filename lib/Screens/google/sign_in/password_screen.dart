@@ -178,7 +178,7 @@ class _PasswordScreenState extends State<PasswordScreen> {
                                     onTap: () {
                                       bool response = formKey.currentState!.validate();
                                       if(response){
-
+                                        Navigator.of(context).pushNamed('/success');
                                       }
                                     },
                                     child: Container(
