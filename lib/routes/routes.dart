@@ -4,6 +4,7 @@ import 'package:resume_app_daily_task/Screens/gmail/gmail.dart';
 import 'package:resume_app_daily_task/Screens/google/sign_in/email_screen.dart';
 import 'package:resume_app_daily_task/Screens/google/sign_in/password_screen.dart';
 import 'package:resume_app_daily_task/Screens/google/sign_in/succesful_screen.dart';
+import 'package:resume_app_daily_task/Screens/image_picker/imagePicker.dart';
 import 'package:resume_app_daily_task/Screens/login_screen/loginScreen.dart';
 
 class MyRoutes{
@@ -11,8 +12,9 @@ class MyRoutes{
     '/gmail': (context) => const Gmail(),
     '/enter': (context) => const EnterScreen(),
     '/login': (context) => const LoginScreen(),
-    '/': (context) => const EmailScreen(),
+    '/email': (context) => const EmailScreen(),
     '/password': (context) => const PasswordScreen(),
     '/success': (context) => const SuccessScreen(),
+    '/': (context) => const Picker(),
   };
 }

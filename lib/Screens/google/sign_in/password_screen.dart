@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 
 class PasswordScreen extends StatefulWidget {
   const PasswordScreen({super.key});
@@ -10,9 +12,10 @@ class PasswordScreen extends StatefulWidget {
 class _PasswordScreenState extends State<PasswordScreen> {
   @override
   Widget build(BuildContext context) {
-    GlobalKey<FormState> formKey= GlobalKey();
+    GlobalKey<FormState> formKey = GlobalKey();
     TextEditingController txtPassword = TextEditingController();
-    RegExp regex = RegExp(r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#\$&*~]).{8,}$');
+    RegExp regex =
+        RegExp(r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#\$&*~]).{8,}$');
 
     return Scaffold(
       backgroundColor: const Color(0xfff0f4f8),
@@ -93,17 +96,14 @@ class _PasswordScreenState extends State<PasswordScreen> {
                     ),
                   ),
                   child: Padding(
-                    padding: const EdgeInsets.only(top: 85, left: 15, right: 15),
+                    padding:
+                        const EdgeInsets.only(top: 85, left: 15, right: 15),
                     child: Column(
                       children: [
                         TextFormField(
                           validator: (value) {
-                            if(value!.isEmpty)
-                              {
-                                return 'Password is required';
-                              }
-                            else if(value.length>=8 && value.length<=35){
-                              return 'Password must be between 8-35';
+                            if (value!.isEmpty) {
+                              return 'Password is required';
                             }
                             // else if(!regex.hasMatch(value)){
                             //   return 'Enter valid password';
@@ -180,12 +180,20 @@ class _PasswordScreenState extends State<PasswordScreen> {
                                 const SizedBox(width: 25),
                                 Padding(
                                   padding:
-                                  const EdgeInsets.only(top: 25, right: 5),
+                                      const EdgeInsets.only(top: 25, right: 5),
                                   child: GestureDetector(
                                     onTap: () {
-                                      bool response = formKey.currentState!.validate();
-                                      if(response){
-                                        Navigator.of(context).pushNamed('/success');
+                                      bool response =
+                                          formKey.currentState!.validate();
+                                      if (response) {
+                                        ScaffoldMessenger.of(context)
+                                            .showSnackBar(
+                                          const SnackBar(
+                                            content: Text('Login Successfully'),
+                                          ),
+                                        );
+                                        Navigator.of(context)
+                                            .pushNamed('/success');
                                       }
                                     },
                                     child: Container(
