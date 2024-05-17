@@ -4,6 +4,8 @@ import 'package:resume_app_daily_task/Screens/gmail/gmail.dart';
 import 'package:resume_app_daily_task/Screens/google/sign_in/email_screen.dart';
 import 'package:resume_app_daily_task/Screens/google/sign_in/password_screen.dart';
 import 'package:resume_app_daily_task/Screens/google/sign_in/succesful_screen.dart';
+import 'package:resume_app_daily_task/Screens/id_card/id.dart';
+import 'package:resume_app_daily_task/Screens/id_card/idCard.dart';
 import 'package:resume_app_daily_task/Screens/image_picker/imagePicker.dart';
 import 'package:resume_app_daily_task/Screens/login_screen/loginScreen.dart';
 
@@ -15,6 +17,8 @@ class MyRoutes{
     '/email': (context) => const EmailScreen(),
     '/password': (context) => const PasswordScreen(),
     '/success': (context) => const SuccessScreen(),
-    '/': (context) => const Picker(),
+    '/picker': (context) => const Picker(),
+    '/': (context) => const IdCard(),
+    '/idCard': (context) => const IdCardScreen(),
   };
 }
