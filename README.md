@@ -175,5 +175,12 @@ https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/bcc5b720-a4
 <a href="https://github.com/Sahilk0809/resume_app_daily_task/blob/master/lib/Screens/google/sign_in/succesful_screen.dart"> ⭐Click here for the source code⭐ </a>
 
 https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/a7a75e17-a64a-4aac-a878-2c3fe01ae987
-
 </div>
+
+# 6.5 Snack Bar
+<img src="" height=65%>
+
+# 6.6 Image Picker
+<img src="https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/6b3f6d3f-2694-4ca0-b17d-79f7ebd50f35" height=65% width=22%>
+<img src="https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/91ccc268-f5c2-4bc6-b83a-0a1098b440f4" height=65% width=22%>
+<video src="https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/7286f4ec-d2bd-4b3e-b956-c53fc4db8602">
