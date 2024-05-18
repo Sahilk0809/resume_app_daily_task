@@ -192,3 +192,9 @@ https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/7286f4ec-d2
 
 https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/8e2ccc0a-15f4-4bb2-b6bb-534301302de7
 
+# 6.7 Dynamic Text Fields
+
+<img src="https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/d9e8ca92-74dd-4aa7-83ce-f97b465dfa9f" height=65% width=22%>
+
+https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/ac095f96-970d-41a7-8a30-6e5a9601388c
+
