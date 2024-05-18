@@ -16,6 +16,8 @@ TextEditingController txtFirstName = TextEditingController();
 TextEditingController txtLastName = TextEditingController();
 TextEditingController txtPhoneNumber = TextEditingController();
 TextEditingController txtAddress = TextEditingController();
+TextEditingController txtEmail = TextEditingController();
+TextEditingController txtDob = TextEditingController();
 GlobalKey<FormState> formKey = GlobalKey();
 
 class _IdCardState extends State<IdCard> {
@@ -45,7 +47,7 @@ class _IdCardState extends State<IdCard> {
                 children: [
                   CircleAvatar(
                     backgroundColor: Colors.grey,
-                    radius: 100,
+                    radius: 80,
                     backgroundImage:
                         (fileImage != null) ? FileImage(fileImage!) : null,
                   ),
@@ -106,10 +108,18 @@ class _IdCardState extends State<IdCard> {
                     height: 20,
                   ),
                   fields(
-                    hintText: 'Ex:- +91 9879525452',
+                      hintText: 'dd/mm/yy',
+                      label: 'D.O.B',
+                      controller: txtDob,
+                      suffixIcons: const Icon(Icons.date_range)),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  fields(
+                    hintText: 'Ex:- 9879525452',
                     label: 'Phone Number',
                     controller: txtPhoneNumber,
-                    maxLength: 14,
+                    maxLength: 10,
                     keyBoardType: TextInputType.number,
                   ),
                   const SizedBox(
@@ -121,6 +131,13 @@ class _IdCardState extends State<IdCard> {
                     controller: txtAddress,
                     maxLines: 4,
                   ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  fields(
+                      hintText: 'xyz@gmail.com',
+                      label: 'E-mail',
+                      controller: txtEmail),
                   const SizedBox(
                     height: 20,
                   ),
@@ -159,17 +176,21 @@ class _IdCardState extends State<IdCard> {
         ),
         bottomNavigationBar: GestureDetector(
           onTap: () {
-            firstName = txtFirstName.text;
-            lastName = txtLastName.text;
-            phoneNumber = txtPhoneNumber.text;
-            address = txtAddress.text;
-            for (int i = 0; i < hobby.length; i++) {
-              if (hobby[i]) {
-                hobbySelected.add(hobbyType[i]);
-              }
-            }
             bool response = formKey.currentState!.validate();
             if (response) {
+              firstName = txtFirstName.text;
+              lastName = txtLastName.text;
+              phoneNumber = txtPhoneNumber.text;
+              address = txtAddress.text;
+              email = txtEmail.text;
+              dob = txtDob.text;
+              for (int i = 0; i < hobby.length; i++) {
+                if (hobby[i]) {
+                  hobby[i] = false;
+                  hobbySelected.add(hobbyType[i]);
+                }
+              }
+              formKey.currentState!.reset();
               Navigator.of(context).pushNamed('/idCard');
             }
           },
@@ -219,7 +240,8 @@ class _IdCardState extends State<IdCard> {
       required controller,
       maxLength,
       maxLines,
-      keyBoardType}) {
+      keyBoardType,
+      suffixIcons}) {
     return TextFormField(
       validator: (value) {
         if (value!.isEmpty) {
@@ -244,6 +266,7 @@ class _IdCardState extends State<IdCard> {
         labelStyle: const TextStyle(
           color: Colors.black,
         ),
+        suffixIcon: suffixIcons,
       ),
       cursorColor: Colors.black,
       controller: controller,

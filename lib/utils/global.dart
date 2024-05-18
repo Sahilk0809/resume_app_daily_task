@@ -21,5 +21,7 @@ String firstName = '';
 String lastName = '';
 String phoneNumber = '';
 String address = '';
+String email = '';
+String dob = '';
 List hobbySelected = [];
 
