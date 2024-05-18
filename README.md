@@ -183,4 +183,12 @@ https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/a7a75e17-a6
 # 6.6 Image Picker
 <img src="https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/6b3f6d3f-2694-4ca0-b17d-79f7ebd50f35" height=65% width=22%>
 <img src="https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/91ccc268-f5c2-4bc6-b83a-0a1098b440f4" height=65% width=22%>
-<video src="https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/7286f4ec-d2bd-4b3e-b956-c53fc4db8602">
+
+https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/7286f4ec-d2bd-4b3e-b956-c53fc4db8602
+
+# Id Card
+<img src="https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/2d504808-f427-4720-968a-2b1457b6d29f" height=65% width=22%>
+<img src="https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/46ba3ae0-c2ea-4eb5-bfec-a8a06314201f" height=65% width=22%>
+
+https://github.com/Sahilk0809/resume_app_daily_task/assets/149374235/8e2ccc0a-15f4-4bb2-b6bb-534301302de7
+
