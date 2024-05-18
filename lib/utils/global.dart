@@ -24,4 +24,3 @@ String address = '';
 String email = '';
 String dob = '';
 List hobbySelected = [];
-

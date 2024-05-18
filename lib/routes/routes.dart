@@ -8,6 +8,7 @@ import 'package:resume_app_daily_task/Screens/id_card/id.dart';
 import 'package:resume_app_daily_task/Screens/id_card/idCard.dart';
 import 'package:resume_app_daily_task/Screens/image_picker/imagePicker.dart';
 import 'package:resume_app_daily_task/Screens/login_screen/loginScreen.dart';
+import '../Screens/generate_dynamic_text_field/dynamic_text_field.dart';
 
 class MyRoutes{
   static Map<String, Widget Function(BuildContext)> routes = {
@@ -18,7 +19,8 @@ class MyRoutes{
     '/password': (context) => const PasswordScreen(),
     '/success': (context) => const SuccessScreen(),
     '/picker': (context) => const Picker(),
-    '/': (context) => const IdCard(),
+    '/register': (context) => const IdCard(),
     '/idCard': (context) => const IdCardScreen(),
+    '/': (context) => const DynamicTextField(),
   };
 }

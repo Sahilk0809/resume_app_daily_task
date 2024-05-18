@@ -199,10 +199,11 @@ class _IdCardState extends State<IdCard> {
             elevation: 5,
             shadowColor: Colors.black,
             child: Center(
-                child: Text(
-              'Submit',
-              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-            )),
+              child: Text(
+                'Submit',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+              ),
+            ),
           ),
         ),
       ),
