@@ -44,40 +44,92 @@ class _IdCardScreenState extends State<IdCardScreen> {
                   height: 20,
                 ),
                 ListTile(
-                  leading: const Text('Name : ',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
-                  title: Text('$firstName $lastName',style: const TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
+                  leading: const Text(
+                    'Name : ',
+                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
+                  title: Text(
+                    '$firstName $lastName',
+                    style: const TextStyle(
+                        fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
                 ),
                 ListTile(
-                  leading: const Text('D.O.B : ',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
-                  title: Text(dob,style: const TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
+                  leading: const Text(
+                    'D.O.B : ',
+                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
+                  title: Text(
+                    dob,
+                    style: const TextStyle(
+                        fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
                 ),
                 ListTile(
-                  leading: const Text('Address : ',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
-                  title: Text(address,style: const TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
+                  leading: const Text(
+                    'Address : ',
+                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
+                  title: Text(
+                    address,
+                    style: const TextStyle(
+                        fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
                 ),
                 ListTile(
-                  leading: const Text('Gender : ',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
-                  title: Text(gender,style: const TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
+                  leading: const Text(
+                    'Gender : ',
+                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
+                  title: Text(
+                    gender,
+                    style: const TextStyle(
+                        fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
                 ),
                 ListTile(
-                  leading: const Text('Contact : ',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
-                  title: Text(phoneNumber,style: const TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
+                  leading: const Text(
+                    'Contact : ',
+                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
+                  title: Text(
+                    phoneNumber,
+                    style: const TextStyle(
+                        fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
                 ),
                 ListTile(
-                  leading: const Text('Email : ',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
-                  title: Text(email,style: const TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
+                  leading: const Text(
+                    'Email : ',
+                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
+                  title: Text(
+                    email,
+                    style: const TextStyle(
+                        fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
                 ),
                 ListTile(
-                  leading: const Text('Hobbies : ',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
+                  leading: const Text(
+                    'Hobbies : ',
+                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
                   title: SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Row(
                       children: [
-                        ...List.generate(hobbySelected.length, (index) => Row(
-                          children: [
-                            Text('${hobbySelected[index]} ',style: const TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
-                          ],
-                        )),
+                        ...List.generate(
+                          hobbySelected.length,
+                          (index) => Row(
+                            children: [
+                              Text(
+                                '${hobbySelected[index]} ',
+                                style: const TextStyle(
+                                    fontSize: 25, fontWeight: FontWeight.bold),
+                              ),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   ),
