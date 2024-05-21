@@ -24,3 +24,16 @@ String address = '';
 String email = '';
 String dob = '';
 List hobbySelected = [];
+
+List<InvoiceDetailsModel> details = [
+  InvoiceDetailsModel(name: 'Lenovo V15', category: 'Laptop', price: '21000'),
+  InvoiceDetailsModel(name: 'HP Victus', category: 'Laptop', price: '67000'),
+  InvoiceDetailsModel(name: 'Acer Nitro', category: 'Laptop', price: '76000'),
+];
+
+class InvoiceDetailsModel{
+  String? name;
+  String? price;
+  String? category;
+  InvoiceDetailsModel({this.name, this.category, this.price});
+}
